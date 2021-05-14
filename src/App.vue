@@ -1,24 +1,24 @@
 <template>
   <div id="app">
-    <!--<Home1 />-->
+    <Home />
     <!--For Home3-->
     <div v-if="display">
-      <Home3 />
+    <!--  <Home3 />-->
     </div>
     <button v-on:click="toogle">Toggle</button>
   </div>
 </template>
 
 <script>
-//import Home from './components/Home.vue'
+import Home from './components/Home.vue'
 //import Home2 from './components/Home2.vue'
-import Home3 from "./components/Home3.vue";
+//import Home3 from "./components/Home3.vue";
 
 export default {
   name: "App",
   components: {
-    Home3,
-    //Home,
+    //Home3,
+    Home,
   },
   //for home3
   data() {
